@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Event Handler</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            document.querySelector("form").onsubmit = function(){
+                let name = document.querySelector("#name").value;
+                alert (name);
+            };
+            document.querySelector("#Clickme").onclick = function () {
+                document.querySelector("#h1").innerHTML = "Good Bye";
+            };
+        });
+
+        // function goodbye(){
+        // document.querySelector("h1").innerHTML = "Good Bye";
+        // }
+    </script>
+
+</head>
+<body>
+    <h1>Hello</h1>
+    <button id="Clickme"> Click me</button>
+
+    <form action="">
+        <p> Name: </p>
+        <input type="text">
+        <input type="submit" value="OK">
+    </form>
+</body>
+</html>
