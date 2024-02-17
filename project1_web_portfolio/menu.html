@@ -5,23 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .col1{
+            background-color: blanchedalmond;
+        }
          .main{
      margin: 80px auto;
      border: 4px double;
-     width: 1000px;
-     text-align: center;
- }
+     width: 1000px; }
+        .col{
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <div class="main">
+    <div class="main col1">
         <div class="logotext">
-           <p class="the">Bua</p>
-           <h1 class="maintext">loy</h1>
-           <h2 class="maintext">Skewers</h2>
+           <h1 class="col">Bua</h1>
+           <h2 class="col">loy</h2>
+           <h3 class="col">Skewers</h3>
         </div>
-    <h1> Bualoy Skewers</h1>
-    <h2> บัวลอยเสียบไม้ </h2>
+    <h1 class="col"> Bualoy Skewers</h1>
+    <h2 class="col" > บัวลอยเสียบไม้ </h2>
     <img src="image/bbbbb.jpg" alt="Bualoy" width="550">
     <img src="image/1pp.jpg" alt="ปั้น" width="350">
 
@@ -62,8 +66,10 @@
         <h3>จัดจาน</h3>
         
     <p> จัดบัวลอยเสียบไม้ใส่จาน ตามด้วยน้ำกะทิราดที่เตรียมไว้ และน้ำตาลทรายแดง ตามด้วยโรยงาดำและงาขาว เป็นอันเสร็จ พร้อมเสิร์ฟ</p>
-    <img src="image/bb2.jpg" alt="จัดจาน" width="650">
-            <table border="2">
+    <img src="image/bb2.jpg" alt="จัดจาน" width="350" class="col">
+
+    <div class="col">
+            <table border="2" class="col">
                 <tr>
                     <td colspan="2">ข้อมูลโภชนาการ</td>
                 </tr>
@@ -88,6 +94,7 @@
                     <td>4 กรัม</td>
                 </tr>
                 </table>
+    </div>
        <p> ที่มา: https://www.wongnai.com/recipes/bua-loy-stick</p>
 </body>
 </html
